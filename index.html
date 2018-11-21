@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Play Crystals Collector!</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel = "stylesheet" type = "text/css" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Kumar+One+Outline" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"><h1>Crystals Collector!</h1>
+                    <div class="instructions">
+                        <p>You will be given a random number at the start of the game.</p>
+                        <p>By clicking on the crystals below, you will add a value to your total score.</p>
+                        <p>You win the game by matching you total score to the random number without going over.</p>
+                        <p>Click on the crystal to reveal the value.</p>
+                        <p>The value of the crystals will change for every game.</p>
+                    </div>   
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8" id="randNum"></div>
+                <div class="col-md-4">
+                    <p>Wins: <span id="winCount"></span></p>
+                    <br>
+                    <p>Losses: <span id="lossCount"></span></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="assets/images/pink-stone.jpg"></div>
+                <div class="col-md-3">
+                    <img src="assets/images/blue-stone.jpg"></div>
+                <div class="col-md-3">
+                    <img src="assets/images/yellow-stone.jpg"></div>
+                <div class="col-md-3">
+                    <img src="assets/images/green-stone.jpg"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Your total score is:</p></div>
+                <div class="col-md-6">
+                    <span id="userScore"></span></div>
+            </div>
+
+    </body>
+
+</html>
