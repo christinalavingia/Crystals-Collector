@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <title>Play Crystals Collector!</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel = "stylesheet" type = "text/css" href="assets/css/style.css">
+        <link rel = "stylesheet" type= "text/css" href="assets/css/reset.css">
+        <link rel = "stylesheet" type= "text/css" href="assets/css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Kumar+One+Outline" rel="stylesheet">
     </head>
 
@@ -23,7 +24,8 @@
             </div>
 
             <div class="row" id="tally">
-                <div class="col-md-8" id="randNum"></div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"><span id="randNumber"></span></div>
                 <div class="col-md-4">
                     <p>Wins: <span id="winCount"></span></p>
                     <br>
@@ -32,21 +34,21 @@
             </div>
 
             <div class="row" id="gemButtons">
-                <div class="col-md-3 pink">
+                <div class="col-md-3 crystal" id="pink">
                     <img src="assets/images/pink-stone.jpg"></div>
-                <div class="col-md-3 blue">
+                <div class="col-md-3 crystal" id="blue">
                     <img src="assets/images/blue-stone.jpg"></div>
-                <div class="col-md-3 yellow">
+                <div class="col-md-3 crystal" id="yellow">
                     <img src="assets/images/yellow-stone.jpg"></div>
-                <div class="col-md-3 green">
+                <div class="col-md-3 crystal" id="green">
                     <img src="assets/images/green-stone.jpg"></div>
             </div>
 
             <div class="row" id="gemsValues">
-                    <div class="col-md-3 pinkVal"></div>
-                    <div class="col-md-3 blueVal"></div>
-                    <div class="col-md-3 yellowVal"></div>
-                    <div class="col-md-3 greenVal"></div>
+                    <div class="col-md-3 values" id="pinkVal"></div>
+                    <div class="col-md-3 values" id="blueVal"></div>
+                    <div class="col-md-3 values" id="yellowVal"></div>
+                    <div class="col-md-3 values" id="greenVal"></div>
             </div>
             
             <div class="row" id="totalScore">
@@ -55,7 +57,9 @@
                 <div class="col-md-6">
                     <span id="userScore"></span></div>
             </div>
-
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
     </body>
 
 </html>
